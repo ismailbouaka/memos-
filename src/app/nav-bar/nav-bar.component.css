@@ -1,0 +1,10 @@
+.side-menu{
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: 1;
+    background-color: whitesmoke;
+    top: 0;
+    left: 0;
+}
