@@ -9,7 +9,7 @@ html,body{
     .container{
     height: 100%;
     align-content: center;
-    margin-top: 12%;
+    margin-top: 7%;
     }
     
     .card{
@@ -83,4 +83,11 @@ html,body{
     
     .links a{
     margin-left: 4px;
+    }
+    .inputs-group{
+        padding-top: 25px;
+
+    }
+    .input-group{
+     padding-bottom: 9px;
     }
