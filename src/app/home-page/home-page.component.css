@@ -9,6 +9,7 @@ html,body{
     .container{
     height: 100%;
     align-content: center;
+    margin-top: 12%;
     }
     
     .card{
@@ -16,7 +17,7 @@ html,body{
     margin-top: auto;
     margin-bottom: auto;
     width: 400px;
-    background-color: rgba(0,0,0,0.5) !important;
+    background-color: white !important;
     }
     
     .social_icon span{
@@ -31,7 +32,7 @@ html,body{
     }
     
     .card-header h3{
-    color: white;
+    color: #FFC312;
     }
     
     .social_icon{
