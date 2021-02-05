@@ -1,0 +1,54 @@
+.contact-list{
+  background-color: white;
+  display: block;
+  border-radius: .7%;
+}
+
+.contact-info{
+  background-color: white;
+  border-left: .6px solid #C0C0C0;
+  border-radius: .7%;
+}
+
+.contact-panel{
+  margin-top: 30px;
+  height: 600px;
+  border: 1px solid #C0C0C0;
+  border-radius: .7%;
+}
+
+.contact-list-header{
+  background-color: #212529;
+  color: white;
+  height: 60px;
+  width: 100%;
+  border-bottom: .6px solid #C0C0C0;
+}
+.contact-list-title{
+  text-align: center;
+  margin-top: 17px;
+  font-size: 19px;
+}
+
+.contact-list-content{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+
+.contact-add-button{
+  bottom: 0;
+  position: absolute;
+  padding-left: 40%;
+  padding-right: 50%;
+  padding-bottom: 12px;
+}
+.bg{
+  background-color: whitesmoke;
+}
+
+.tab{
+  cursor: pointer;
+}
+
