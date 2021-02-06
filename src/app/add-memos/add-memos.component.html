@@ -1,0 +1,10 @@
+<div class="example-full-width" class="border" style="width: 100%">
+    <input placeholder="Titre" (ngModel)="data.Titre" value="" matinput>
+</div>
+<mat-divider></mat-divider>
+<div class="border" style="width:100%;height: 90%;">
+    <textarea matInput rows="5" cols="40" placeholder="text" (ngModel)="data.Content"></textarea>
+</div>
+<button mat-fabtype="button" (click)="add()">
+    <mat-icon>done</mat-icon>
+</button>

@@ -1,13 +1,27 @@
 <div id="top-bar" class="side-menu">
 
-    <a routerLink="/home-page.component.html">
-        <button id="My-Home-Button">Home</button>
-    </a>
-    <a routerLink='/perso-page.component.html'>
-        <button id="My-perso-Button">Perso</button>
-    </a>
-    <a routerLink='/admin'>
-        <button id="My-Admin-Button">Admin</button>
-    </a>
+    <div class="d-flex align-items-center m-5 flex-column" style="background-color: white !important;">
+        <mat-icon style="transform: scale(5);">account_circle </mat-icon>
+        <H4 style="margin-top: 60px;">Name </H4>
+        <H5 style="margin-top: 20px;">Post </H5>
+    </div>
+    <div class="d-flex  flex-column" style="height: 62.7%; background-color: black;">
+        <div class="nav-tabs ">
+            <a class="align-self-center">Gestion des Memos</a>
+
+        </div>
+        <mat-divider></mat-divider>
+
+        <div class="nav-tabs">
+            <a class="">Gestion des utilisateurs</a>
+        </div>
+        <mat-divider></mat-divider>
+
+        <div class="nav-tabs">
+            <a class="">deconnecter</a>
+        </div>
+        <mat-divider></mat-divider>
+
+    </div>
 
 </div>

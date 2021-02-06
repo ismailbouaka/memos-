@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../service/auth.service'
+import { User } from '../service/user'
+import { Router } from '@angular/router'
+
+
 
 @Component({
   selector: 'app-home-page',
@@ -7,9 +12,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
-  constructor() { }
+  user: User;
+
+  constructor(private authService: AuthService, private router: Router) {
+    this.user = new User();
+  }
 
   ngOnInit(): void {
   }
 
+
+  login() {
+    this.authService.login(this.user.email, this.user.password).then(val => {
+      this.router.navigate(['']);
+    }).catch(error => console.log("erreur :" + error));
+  }
 }

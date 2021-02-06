@@ -1,22 +1,22 @@
-<div class="bg">
+<div>
   <div class="container">
     <div class="contact-panel row">
       <div class="contact-list col-6 col-sm-4">
         <div class="row">
           <div class="contact-list-header">
-            <h3 class="contact-list-title">Contacts</h3>
+            <h3 class="contact-list-title">Memos</h3>
           </div>
           <div class="contact-list-content">
             <mat-list dense>
               <mat-list-item class="tab">
-                <mat-icon style="transform: scale(1.5);">account_circle</mat-icon>
-                <h4 class="d-inline" style="padding-left: 10%;padding-top: 4%;">chhdjjj kkff</h4>
+                <mat-icon style="transform: scale(1.5);">assessment</mat-icon>
+                <h4 class="d-inline" style="padding-left: 10%;padding-top: 4%;">Monday Memos</h4>
                 <mat-divider></mat-divider>
               </mat-list-item>
             </mat-list>
           </div>
           <div class="contact-add-button">
-            <button color="" mat-fab aria-label="Ajouter un nouveau contact">
+            <button (click)="addMemos()" color="" mat-fab aria-label="Ajouter un nouveau contact">
               <mat-icon>add</mat-icon>
             </button>
           </div>
@@ -24,7 +24,13 @@
         </div>
       </div>
       <div class="contact-info col-12 col-md-8">
-        <p>Selectionez un contact pour le visualiser.</p>
+        <app-add-memos *ngIf="!current_memos">
+
+        </app-add-memos>
+        <app-memos-display *ngIf="current_memos">
+
+        </app-memos-display>
+
       </div>
     </div>
 

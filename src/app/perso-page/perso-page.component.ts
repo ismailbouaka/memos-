@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./perso-page.component.css']
 })
 export class PersoPageComponent implements OnInit {
-
+  current_memos: any = 1;
   constructor() { }
 
   ngOnInit(): void {
+  }
+  addMemos() {
+    this.current_memos = null;
   }
 
 }
