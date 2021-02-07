@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
+  firebase: {
     apiKey: "AIzaSyBPLOuUTPW7ERGMRav10XEgqMDEy4pMwrU",
     authDomain: "memos-7c3a3.firebaseapp.com",
     databaseURL: "https://memos-7c3a3-default-rtdb.firebaseio.com",
