@@ -23,6 +23,7 @@ export class HomePageComponent implements OnInit {
 
 
   login() {
+    console.log(this.user.email + this.user.password)
     this.authService.login(this.user.email, this.user.password).then(val => {
       //this.router.navigate(['']);
       window.location.reload();
