@@ -8,14 +8,14 @@ import { memosService } from '../service/memos.service'
 })
 export class AddMemosComponent implements OnInit {
   data: any;
-  constructor(private memosService: memosService) { }
+  constructor(private memos: memosService) { }
 
   ngOnInit(): void {
   }
   add() {
 
 
-    this.memosService.createMemos(this.data)
+    this.memos.createMemos(this.data)
       .then(res => {
         /*do something here....
         maybe clear the form or give a success message*/

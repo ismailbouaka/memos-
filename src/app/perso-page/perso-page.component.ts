@@ -14,5 +14,4 @@ export class PersoPageComponent implements OnInit {
   addMemos() {
     this.current_memos = null;
   }
-
 }
