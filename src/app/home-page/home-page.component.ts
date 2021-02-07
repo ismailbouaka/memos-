@@ -16,7 +16,10 @@ export class HomePageComponent implements OnInit {
   user: User;
 
 
-  constructor(private authService: AuthService, private router: Router,) {
+
+
+
+  constructor(private authService: AuthService, private router: Router) {
     this.user = new User();
 
   }
