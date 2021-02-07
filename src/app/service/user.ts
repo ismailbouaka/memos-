@@ -1,7 +1,7 @@
 export class User {
     uid: any;
-    email: any;
+    email: any | string;
     displayName: any;
     isAdmin: any;
-    password: any;
+    password: any | string;
 }
