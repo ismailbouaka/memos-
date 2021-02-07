@@ -24,7 +24,8 @@ export class HomePageComponent implements OnInit {
 
   login() {
     this.authService.login(this.user.email, this.user.password).then(val => {
-      this.router.navigate(['']);
+      //this.router.navigate(['']);
+      console.log("you logged in")
     }).catch(error => console.log("erreur :" + error));
   }
 }
